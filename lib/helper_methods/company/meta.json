@@ -1,0 +1,22 @@
+{
+  "name": "Listar as empresas",
+  "helper_method_key": "company",
+  "requests": [
+    {
+      "method_name": "/companies?show=200",
+      "response_field": [
+        "data"
+      ],
+      "mapping": {
+        "label": {
+          "fields": [
+            "name"
+          ]
+        },
+        "value": {
+          "field": "id"
+        }
+      }
+    }
+  ]
+}

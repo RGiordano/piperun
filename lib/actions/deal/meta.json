@@ -1,0 +1,134 @@
+{
+  "name": {
+    "pt_BR": "Criar Oportunidade",
+    "en": "Create Deal"
+  },
+  "description": {
+    "pt_BR": "Criar Oportunidade",
+    "en": "Create Deal"
+  },
+  "action_fields": {
+    "fields": [
+      {
+        "key": "title",
+        "name": { "pt_BR": "Título", "en": "Título" },
+        "description": {"pt_BR": "Título da oportunidade que será criada no PipeRun","en": "Deal title"},
+        "required": true,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "stage_id",
+        "name": { "pt_BR": "Etapa", "en": "Stage" },
+        "description": {"pt_BR": "Etapa do funil em que a oportunidade será criada no PipeRun","en": "Initial stage for deal"},
+        "required": true,
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "stage"
+        }
+      },
+      {
+        "key": "description",
+        "name": { "pt_BR": "Descrição", "en": "Description" },
+        "description": {"pt_BR": "Descrição da oportunidade que será criada no PipeRun","en": "Deal description"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "observation",
+        "name": { "pt_BR": "Observação", "en": "Observation" },
+        "description": {"pt_BR": "Observação da oportunidade que será criada no PipeRun","en": "Deal observation"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "value",
+        "name": { "pt_BR": "Valor", "en": "Value" },
+        "description": {"pt_BR": "Valor da oportunidade que será criada no PipeRun","en": "Deal value"},
+        "required": false,
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "decimal"
+      },
+      {
+        "key": "value_mrr",
+        "name": { "pt_BR": "Valor MRR", "en": "Value MRR" },
+        "description": {"pt_BR": "Valor recorrente da oportunidade que será criada no PipeRun","en": "Deal value MRR"},
+        "required": false,
+        "visible": true,
+        "field_type": "custom",
+        "data_type": "decimal"
+      },
+      {
+        "key": "person_id",
+        "name": { "pt_BR": "Pessoa", "en": "Person" },
+        "description": {"pt_BR": "Pessoa da oportunidade que será criada no PipeRun","en": "Deal person"},
+        "required": false,
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "person"
+        }
+      },
+      {
+        "key": "company_id",
+        "name": { "pt_BR": "Empresa", "en": "Company" },
+        "description": {"pt_BR": "Empresa da oportunidade que será criada no PipeRun","en": "Deal company"},
+        "required": false,
+        "visible": true,
+        "field_type": "dropdown",
+        "data_type": "integer",
+        "list": {
+          "type": "remote",
+          "helper_method": "company"
+        }
+      },
+      {
+        "key": "person.name",
+        "name": { "pt_BR": "Nome da Pessoa", "en": "Person Name" },
+        "description": {"pt_BR": "Nome da Pessoa associada à oportunidade que será criada no PipeRun","en": "Person name assigned to deal"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "company.name",
+        "name": { "pt_BR": "Nome da Empresa", "en": "Company Name" },
+        "description": {"pt_BR": "Nome da Empresa associada à oportunidade que será criada no PipeRun","en": "Company name assigned to deal"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "person.cpf",
+        "name": { "pt_BR": "CPF da Pessoa", "en": "Person CPF" },
+        "description": {"pt_BR": "CPF da Pessoa associada à oportunidade que será criada no PipeRun","en": "Person cpf assigned to deal"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      },
+      {
+        "key": "company.cnpj",
+        "name": { "pt_BR": "CNPJ da Empresa", "en": "Company CNPJ" },
+        "description": {"pt_BR": "CNPJ da Empresa associada à oportunidade que será criada no PipeRun","en": "Company cnpj assigned to deal"},
+        "required": false,
+        "visible": true,
+        "field_type": "string",
+        "data_type": "string"
+      }
+    ]
+  }
+}

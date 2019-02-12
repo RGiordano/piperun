@@ -1,0 +1,22 @@
+{
+  "name": "Listar todas as etapas",
+  "helper_method_key": "stage",
+  "requests": [
+    {
+      "method_name": "/stages",
+      "response_field": [
+        "data"
+      ],
+      "mapping": {
+        "label": {
+          "fields": [
+            "name"
+          ]
+        },
+        "value": {
+          "field": "id"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,220 @@
+{
+  "name": {
+    "pt_BR": "oportunidade recebida via automação",
+    "en": "deal received by automation"
+  },
+  "trigger_key": "automation_deal",
+  "description": {
+    "pt_BR": "",
+    "en": ""
+  },
+  "filters": [],
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "id",
+        "name": {
+          "pt_BR": "id",
+          "en": "id"
+        },
+        "description": {
+          "pt_BR": "Identificador da oportunidade",
+          "en": "deal id"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "title",
+        "name": {
+          "pt_BR": "título",
+          "en": "title"
+        },
+        "description": {
+          "pt_BR": "Título da oportunidade",
+          "en": "deal title"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "created_at",
+        "name": {
+          "pt_BR": "Criado em",
+          "en": "created at"
+        },
+        "description": {
+          "pt_BR": "Data de criação da oportunidade",
+          "en": "date of deal creation"
+        },
+        "field_type": "date"
+      },
+      {
+        "key": "closed_at",
+        "name": {
+          "pt_BR": "Data de fechamento",
+          "en": "closed at"
+        },
+        "description": {
+          "pt_BR": "Data de fechamento da oportunidade",
+          "en": "deal's won date"
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "description",
+        "name": {
+          "pt_BR": "Descrição",
+          "en": "description"
+        },
+        "description": {
+          "pt_BR": "Descrição da oportunidade",
+          "en": "deal's description"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "observation",
+        "name": {
+          "pt_BR": "Observação",
+          "en": "observation"
+        },
+        "description": {
+          "pt_BR": "Observação da Oportunidade",
+          "en": "deal's observation"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "deleted",
+        "name": {
+          "pt_BR": "Lixeira",
+          "en": "trash"
+        },
+        "description": {
+          "pt_BR": "1 se a Oportunidade estiver na lixeira, 0 caso contrário",
+          "en": "1 if deal is marked in trash, otherwise 0"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "freezed",
+        "name": {
+          "pt_BR": "Congelado",
+          "en": "freezed"
+        },
+        "description": {
+          "pt_BR": "1 se a Oportunidade estiver marcada como congelada, 0 caso contrário",
+          "en": "1 if deal is marked in freezed, otherwise 0"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "hash",
+        "name": {
+          "pt_BR": "Hash",
+          "en": "hash"
+        },
+        "description": {
+          "pt_BR": "Hash da Oportunidade",
+          "en": "deal's hash"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "value",
+        "name": {
+          "pt_BR": "Valor",
+          "en": "value"
+        },
+        "description": {
+          "pt_BR": "Valor da Oportunidade",
+          "en": "deal's value"
+        },
+        "field_type": "decimal"
+      },
+      {
+        "key": "value_mrr",
+        "name": {
+          "pt_BR": "Valor MRR",
+          "en": "MRR value"
+        },
+        "description": {
+          "pt_BR": "Valor MRR da Oportunidade",
+          "en": "deal's MRR value"
+        },
+        "field_type": "decimal"
+      },
+      {
+        "key": "company.id",
+        "name": {
+          "pt_BR": "Empresa - ID",
+          "en": "Company - ID"
+        },
+        "description": {
+          "pt_BR": "ID da Empresa relacionada à Oportunidade",
+          "en": "company id associated with deal"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "company.name",
+        "name": {
+          "pt_BR": "Empresa - Nome",
+          "en": "Company - Nome"
+        },
+        "description": {
+          "pt_BR": "Nome da Empresa relacionada à Oportunidade",
+          "en": "company name"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.cnpj",
+        "name": {
+          "pt_BR": "Empresa - CNPJ",
+          "en": "Company - CNPJ"
+        },
+        "description": {
+          "pt_BR": "CNPJ da Empresa relacionada à Oportunidade",
+          "en": "company CNPJ"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "person.id",
+        "name": {
+          "pt_BR": "Pessoa - ID",
+          "en": "Person - ID"
+        },
+        "description": {
+          "pt_BR": "ID da Empresa relacionada à Oportunidade",
+          "en": "company id associated with deal"
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "person.name",
+        "name": {
+          "pt_BR": "Pessoa - Nome",
+          "en": "Person - Name"
+        },
+        "description": {
+          "pt_BR": "Nome da Empresa relacionada à Oportunidade",
+          "en": "company name associated with deal"
+        },
+      {
+        "key": "person.cpf",
+        "name": {
+          "pt_BR": "Pessoa - CPF",
+          "en": "Person - CPF"
+        },
+        "description": {
+          "pt_BR": "CPF da Empresa relacionada à Oportunidade",
+          "en": "company cpf associated with deal"
+        },
+        "field_type": "string"
+      }
+    ]
+  },
+  "trigger_type": "webhook"
+}

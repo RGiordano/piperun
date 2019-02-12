@@ -1,0 +1,22 @@
+{
+  "name": "Listar as pessoas",
+  "helper_method_key": "person",
+  "requests": [
+    {
+      "method_name": "/persons?show=200",
+      "response_field": [
+        "data"
+      ],
+      "mapping": {
+        "label": {
+          "fields": [
+            "name"
+          ]
+        },
+        "value": {
+          "field": "id"
+        }
+      }
+    }
+  ]
+}

@@ -1,4 +1,40 @@
 {
   "app_id": "piperun",
-  "name": "PipeRun"
+  "name": "PipeRun",
+  "description": {
+    "pt_BR": "O Sistema CRM de Vendas PipeRun é um sistema de gestão do relacionamento com clientes e do funil de vendas além da gestão da rotina da equipe para otimizar o fluxo das vendas no funil e as atividades dos vendedores, acelerando a geração de negócios. Conheça um Sistema de CRM de Vendas que ajuda a crescer o seu negócio.",
+    "en": "The PipeRun CRM Sales System is a customer relationship management system and sales funnel in addition to team routine management to optimize the sales flow in the funnel and sales activities, accelerating the generation of business. Get to know a CRM Sales System that helps you grow your business."
+  },
+  "website": "https://crmpiperun.com/",
+  "signup_url": "https://crmpiperun.com/#teste-gratis",
+  "api_base_uri": {
+    "production": {
+      "uri": "https://api.pipe.run/v1/",
+      "label": "Produção",
+      "default": true
+    },
+    "alpha": {
+      "uri": "https://alpha-api.pipe.run/v1/",
+      "label": "Alpha"
+    },
+    "sandbox": {
+      "uri": "http://local.piperunapi/v1/",
+      "label": "Sandbox"
+    }
+  },
+  "authentication": {
+    "ping_request": {
+      "uri": ""
+    },
+    "type": "pass_through_header",
+    "fields": [
+      {
+        "name": "api_key",
+        "label": "Token",
+        "mapping": "Token",
+        "prefix": "",
+        "type": "text"
+      }
+    ]
+  }
 }
